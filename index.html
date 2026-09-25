@@ -128,7 +128,7 @@ section{padding-block:clamp(72px,9vw,120px)}
 
 /* timeline */
 .timeline{background:var(--surface);border-block:1px solid var(--line);padding-block:clamp(56px,6vw,80px)}
-.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:36px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:36px}
 .tl::before{content:"";position:absolute;left:0;right:0;top:7px;height:1px;background:linear-gradient(90deg,var(--gold-soft),var(--line))}
 .tl li{list-style:none;padding-right:24px;display:grid;gap:10px;position:relative}
 .tl li::before{content:"";width:15px;height:15px;border-radius:50%;background:var(--surface);border:1.5px solid var(--gold-soft);box-shadow:0 0 0 5px var(--surface)}
@@ -290,6 +290,82 @@ footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12p
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+
+.menu a,.lang button{white-space:nowrap}
+@media (min-width:921px) and (max-width:1200px){.menu{gap:18px}.brand small{display:none}}
+/* shenzhen pcba plant */
+.pcba{background:var(--surface);border-block:1px solid var(--line)}
+.pcba img{height:auto}
+.pcba b span,.pcba dd span,.pcba small span{font:inherit;color:inherit;letter-spacing:inherit}
+.pcba h3{font-size:1.6rem;margin-bottom:14px}
+.pc-hero{margin:0;position:relative}
+.pc-hero img{width:100%;aspect-ratio:16/8;object-fit:cover;box-shadow:var(--shadow)}
+.pc-hero figcaption{display:grid;gap:4px;padding:14px 0 0;font-size:.9rem;color:var(--muted)}
+.pc-hero figcaption b{color:var(--ink);font-weight:500;font-size:1rem}
+.pc-facts{display:grid;grid-template-columns:repeat(4,1fr);margin:28px 0 0;background:var(--navy);color:var(--on-navy)}
+.pc-facts div{padding:20px 22px;border-right:1px solid rgba(212,176,106,.22)}
+.pc-facts div:last-child{border:0}
+.pc-facts dt{font:600 11px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#D4B06A;margin-bottom:8px}
+.pc-facts dd{margin:0;font:500 1.3rem/1.2 var(--serif)}
+.pc-split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,4vw,56px);align-items:start;margin-top:clamp(48px,6vw,72px)}
+.pc-split figure,.pc-duo figure{margin:0}
+.pc-split img,.pc-duo img{width:100%;aspect-ratio:16/10;object-fit:cover;box-shadow:var(--shadow)}
+.pc-split figcaption,.pc-duo figcaption,.pc-range figcaption{font-size:.86rem;color:var(--muted);margin-top:8px}
+.pc-stack{display:grid;gap:16px}
+.pc-stack>p{color:var(--ink-2)}
+.pc-note{border-left:2px solid var(--gold-soft);background:var(--surface-2);padding:14px 18px;font-size:.95rem}
+.pc-bm{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
+.pc-bm div{padding:16px;border-right:1px solid var(--line)}
+.pc-bm div:last-child{border:0}
+.pc-bm .hl{background:var(--navy);color:var(--on-navy)}
+.pc-bm small{display:block;font:600 10.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.pc-bm .hl small{color:#D4B06A}
+.pc-bm p{font:500 1.05rem/1.3 var(--serif)}
+.pc-chips{display:flex;flex-wrap:wrap;gap:8px}
+.pc-chips>span{font-size:.88rem;padding:6px 12px;border:1px solid var(--gold-soft);color:var(--ink-2)}
+.pc-block{margin-top:clamp(48px,6vw,72px)}
+.pc-block>.muted{max-width:70ch}
+.pc-diagram{width:100%;margin-top:22px;border:1px solid var(--line);background:#F3F5F8}
+.pc-range{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.pc-range figure{margin:0;background:var(--bg);border:1px solid var(--line)}
+.pc-range img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.pc-range figcaption{padding:10px 12px 12px;margin:0;color:var(--ink);font-size:.9rem;line-height:1.35}
+.pc-duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pc-steps{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin:26px 0 0;padding:0;list-style:none}
+.pc-steps li{display:grid;gap:6px;align-content:start}
+.pc-steps img,.pc-ph{width:100%;aspect-ratio:4/3;object-fit:cover}
+.pc-ph{background:var(--surface-2);display:grid;place-items:center;font:600 12px var(--sans);letter-spacing:.2em;color:var(--muted)}
+.pc-steps small{font:600 10.5px/1 var(--sans);letter-spacing:.18em;color:var(--gold);margin-top:4px}
+.pc-steps b{font:500 1.1rem/1.2 var(--serif)}
+.pc-steps span{font-size:.84rem;color:var(--muted)}
+.pc-two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);margin-top:clamp(48px,6vw,72px)}
+.pc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pc-list li{display:grid;grid-template-columns:minmax(150px,.9fr) 1.3fr;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.93rem}
+.pc-list b{font-weight:600;color:var(--ink)}
+.pc-list span{color:var(--ink-2)}
+.pc-cap{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,4vw,48px);margin-top:clamp(48px,6vw,72px);align-items:start}
+.pc-tablewrap{overflow-x:auto}
+.pc-table{width:100%;border-collapse:collapse;font-size:.93rem;font-variant-numeric:tabular-nums}
+.pc-table td{padding:10px 12px;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.pc-table td:last-child{text-align:right;white-space:nowrap;color:var(--ink)}
+.pc-est{background:var(--navy);color:var(--on-navy);padding:28px 26px;display:grid;gap:10px}
+.pc-est small{font:600 11px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#D4B06A}
+.pc-est strong{font:500 3.2rem/1 var(--serif);font-variant-numeric:tabular-nums}
+.pc-est p{color:var(--on-navy-muted);font-size:.9rem}
+.pc-q{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--ink)}
+.pc-q li{padding:16px 14px 16px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.pc-q b{font:500 1.15rem/1.2 var(--serif)}
+.pc-q span{font-size:.86rem;color:var(--muted)}
+.pc-why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:clamp(48px,6vw,72px)}
+.pc-why div{background:var(--navy-2);color:var(--on-navy);padding:24px 22px}
+.pc-why b{font:500 1.35rem/1.2 var(--serif);display:block;margin-bottom:8px}
+.pc-why p{font-size:.93rem;color:var(--on-navy-muted)}
+.pc-thesis{margin:40px 0 0;padding:28px 0 0;border-top:1px solid var(--gold-soft);max-width:900px;font:italic 500 clamp(1.35rem,1.1rem + 1vw,1.85rem)/1.35 var(--serif);color:var(--ink)}
+body.zh .pc-thesis{font-style:normal}
+@media (max-width:1000px){.pc-range{grid-template-columns:repeat(3,1fr)}.pc-steps{grid-template-columns:repeat(4,1fr)}.pc-q{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){.pc-facts{grid-template-columns:1fr 1fr}.pc-facts div:nth-child(2){border-right:0}.pc-facts div:nth-child(-n+2){border-bottom:1px solid rgba(212,176,106,.22)}.pc-split,.pc-two,.pc-cap,.pc-why{grid-template-columns:1fr}}
+@media (max-width:620px){.pc-range,.pc-steps{grid-template-columns:1fr 1fr}.pc-duo,.pc-bm{grid-template-columns:1fr}.pc-bm div{border-right:0;border-bottom:1px solid var(--line)}.pc-list li{grid-template-columns:1fr;gap:2px}.pc-hero img{aspect-ratio:4/3}}
+@media (max-width:420px){.pc-facts,.pc-q{grid-template-columns:1fr}.pc-facts div{border-right:0!important}}
 </style>
 </head>
 <body>
@@ -305,6 +381,7 @@ footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12p
     <nav class="menu" id="menu" data-open="false">
       <a href="#about"><span class="e">About</span><span class="z">關於我們</span></a>
       <a href="#business"><span class="e">Business</span><span class="z">業務範疇</span></a>
+      <a href="#pcba"><span class="e">PCBA Plant</span><span class="z">PCBA工廠</span></a>
       <a href="#focus"><span class="e">Focus Areas</span><span class="z">重點領域</span></a>
       <a href="#portfolio"><span class="e">Portfolio</span><span class="z">項目案例</span></a>
       <a href="#approach"><span class="e">Approach</span><span class="z">投資方法</span></a>
@@ -342,7 +419,7 @@ footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12p
       <div><dt><span class="e">Incorporated</span><span class="z">成立日期</span></dt><dd><span class="e">22 August 2023</span><span class="z">2023年8月22日</span></dd></div>
       <div><dt><span class="e">Jurisdiction</span><span class="z">註冊地</span></dt><dd><span class="e">Hong Kong SAR</span><span class="z">香港特別行政區</span></dd></div>
       <div><dt><span class="e">Legal form</span><span class="z">公司類別</span></dt><dd><span class="e">Private company limited by shares</span><span class="z">私人股份有限公司</span></dd></div>
-      <div><dt><span class="e">Core activities</span><span class="z">核心業務</span></dt><dd><span class="e">Investment · Projects · Trade</span><span class="z">投資 · 項目 · 貿易</span></dd></div>
+      <div><dt><span class="e">Core activities</span><span class="z">核心業務</span></dt><dd><span class="e">Investment · Manufacturing · Trade</span><span class="z">投資 · 製造 · 貿易</span></dd></div>
     </dl>
   </div>
 </section>
@@ -379,6 +456,7 @@ footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12p
       <li><b>2023</b><p><span class="e">Company established in Hong Kong with a formal corporate identity.</span><span class="z">於香港正式註冊成立，確立企業身份。</span></p></li>
       <li><b>2023–2024</b><p><span class="e">Initial business positioning and operational foundation formed.</span><span class="z">確立業務定位，建立營運基礎。</span></p></li>
       <li><b>2024</b><p><span class="e">Statutory records maintained through annual return and registration updates.</span><span class="z">按時提交周年申報表，持續更新法定登記紀錄。</span></p></li>
+      <li><b><span class="e">Aug 2025</span><span class="z">2025年8月</span></b><p><span class="e">Acquired a PCBA manufacturing plant in Pingshan, Shenzhen.</span><span class="z">收購深圳坪山PCBA電路板組裝工廠。</span></p></li>
       <li><b><span class="e">Next stage</span><span class="z">下一階段</span></b><p><span class="e">Continued development of investment, trade and project coordination capabilities.</span><span class="z">持續強化投資、貿易及項目協調能力。</span></p></li>
     </ol>
   </div>
@@ -436,6 +514,143 @@ footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12p
       <li><b><span class="e">Deliver</span><span class="z">交付</span></b><span><span class="e">Warehousing, logistics and shipment</span><span class="z">倉儲、物流及運輸</span></span></li>
       <li><b><span class="e">Follow up</span><span class="z">跟進</span></b><span><span class="e">After-delivery commercial support</span><span class="z">交付後商務支援</span></span></li>
     </ol>
+  </div>
+</section>
+
+
+<!-- SHENZHEN PCBA PLANT -->
+<section id="pcba" class="pcba">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow"><span class="e">Shenzhen PCBA plant</span><span class="z">深圳PCBA工廠</span></p>
+      <h2><span class="e">From industrial investment to PCB assembly manufacturing</span><span class="z">從產業投資到電路板組裝製造</span></h2>
+      <p class="lede"><span class="e">In August 2025, Smart Village expanded its industrial portfolio by acquiring a PCB assembly (PCBA) manufacturing plant in Shenzhen, gaining a foothold in one of China’s most important manufacturing hubs.</span><span class="z">2025年8月，智慧村收購一家位於深圳的PCBA電路板組裝工廠，擴展產業投資組合，於中國最重要的製造重鎮之一建立據點。</span></p>
+    </div>
+    <figure class="pc-hero">
+      <img src="assets/pcba-site.jpg" alt="Smart Village PCBA plant in Pingshan, Shenzhen" loading="lazy" width="1600" height="900">
+      <figcaption><b>深圳市坪山區龍田街道老坑社區高芯路15號</b><span>No. 15 Gaoxin Road, Laokeng Community, Longtian Subdistrict, Pingshan District, Shenzhen, Guangdong, China</span></figcaption>
+    </figure>
+    <dl class="pc-facts">
+      <div><dt><span class="e">Acquired</span><span class="z">收購</span></dt><dd><span class="e">August 2025</span><span class="z">2025年8月</span></dd></div>
+      <div><dt><span class="e">Location</span><span class="z">地點</span></dt><dd><span class="e">Pingshan, Shenzhen</span><span class="z">深圳坪山 · 大灣區</span></dd></div>
+      <div><dt><span class="e">Operation</span><span class="z">業務</span></dt><dd><span class="e">PCBA manufacturing</span><span class="z">電路板組裝</span></dd></div>
+      <div><dt><span class="e">Core product</span><span class="z">核心產品</span></dt><dd><span class="e">Pump-controller PCBA</span><span class="z">工業水泵控制板</span></dd></div>
+    </dl>
+
+    <div class="pc-split">
+      <div class="pc-stack">
+        <h3><span class="e">What the plant does</span><span class="z">工廠業務</span></h3>
+        <p><span class="e">The plant assembles, inspects and tests electronic components onto printed circuit boards, following customer-approved designs and bills of materials. It serves industrial customers that need reliable control-board production.</span><span class="z">工廠按照客戶核准的設計及物料清單，將電子元件組裝、檢測及測試於印刷電路板上，為需要可靠控制板生產的工業客戶提供服務。</span></p>
+        <p class="pc-note"><span class="e">It does not make semiconductor chips or bare PCB substrates. It covers the critical stage between component supply and the customer’s finished equipment.</span><span class="z">工廠並不生產半導體晶片或裸板，而是專注於元件供應與客戶成品設備之間的關鍵製造環節。</span></p>
+        <div class="pc-bm">
+          <div><small><span class="e">Customer provides</span><span class="z">客戶提供</span></small><p><span class="e">Approved design, bill of materials and component requirements</span><span class="z">核准設計、物料清單及元件要求</span></p></div>
+          <div class="hl"><small><span class="e">Plant delivers</span><span class="z">工廠負責</span></small><p><span class="e">Manufacturing, inspection, testing, traceability and packaging</span><span class="z">製造、檢測、測試、追溯及包裝</span></p></div>
+          <div><small><span class="e">Can extend to</span><span class="z">延伸服務</span></small><p><span class="e">Component procurement, testing and box-build</span><span class="z">元件採購、測試及整機組裝</span></p></div>
+        </div>
+        <div class="pc-chips"><span><span class="e">Pump OEMs</span><span class="z">水泵原廠</span></span><span><span class="e">Control-panel manufacturers</span><span class="z">控制櫃製造商</span></span><span><span class="e">Industrial-system integrators</span><span class="z">工業系統集成商</span></span></div>
+      </div>
+      <figure><img src="assets/pcba-enclosure.jpg" alt="Finished pump-controller module" loading="lazy" width="1400" height="788"><figcaption><span class="e">Finished pump-controller module</span><span class="z">水泵控制器成品模組</span></figcaption></figure>
+    </div>
+
+    <div class="pc-block">
+      <h3><span class="e">Core product: industrial water-pump controller PCBA</span><span class="z">核心產品：工業水泵控制器電路板組件</span></h3>
+      <p class="muted"><span class="e">The board is the control system inside industrial pump equipment. It reads signals from the pump system and switches control outputs through microcontrollers, power devices, relays, resistors, capacitors and terminal connectors.</span><span class="z">該控制板是工業水泵設備的控制核心，透過微控制器、功率元件、繼電器、電阻、電容及端子連接器，讀取水泵系統訊號並控制輸出。</span></p>
+      <img class="pc-diagram" src="assets/pcba-control-diagram.jpg" alt="Pump-controller control path: inputs, signal interface, controller PCBA, output stage, starter, pump motor" loading="lazy" width="1400" height="614">
+    </div>
+
+    <div class="pc-block">
+      <h3><span class="e">Product range</span><span class="z">產品系列</span></h3>
+      <div class="pc-range">
+        <figure><img src="assets/board-single.jpg" alt="Single-pump controller" loading="lazy" width="1400" height="788"><figcaption><span class="e">Single-pump controller</span><span class="z">單泵控制板</span></figcaption></figure>
+        <figure><img src="assets/board-dual.jpg" alt="Dual-pump alternation board" loading="lazy" width="1400" height="788"><figcaption><span class="e">Dual-pump alternation board</span><span class="z">雙泵輪換控制板</span></figcaption></figure>
+        <figure><img src="assets/board-booster.jpg" alt="Booster-pump pressure controller" loading="lazy" width="1400" height="788"><figcaption><span class="e">Booster-pump pressure controller</span><span class="z">增壓泵壓力控制板</span></figcaption></figure>
+        <figure><img src="assets/board-submersible.jpg" alt="Submersible-pump protection board" loading="lazy" width="1400" height="788"><figcaption><span class="e">Submersible-pump protection board</span><span class="z">潛水泵保護板</span></figcaption></figure>
+        <figure><img src="assets/board-irrigation.jpg" alt="Irrigation pump timer / controller" loading="lazy" width="1400" height="788"><figcaption><span class="e">Irrigation pump timer / controller</span><span class="z">灌溉泵定時控制板</span></figcaption></figure>
+        <figure><img src="assets/board-threephase.jpg" alt="Three-phase starter interface board" loading="lazy" width="1400" height="788"><figcaption><span class="e">Three-phase starter interface board</span><span class="z">三相啟動器介面板</span></figcaption></figure>
+        <figure><img src="assets/board-circulation.jpg" alt="Circulation-pump controller" loading="lazy" width="1400" height="788"><figcaption><span class="e">Circulation-pump controller</span><span class="z">循環泵控制板</span></figcaption></figure>
+        <figure><img src="assets/board-watertreat.jpg" alt="Water-treatment pump controller" loading="lazy" width="1400" height="788"><figcaption><span class="e">Water-treatment pump controller</span><span class="z">水處理泵控制板</span></figcaption></figure>
+        <figure><img src="assets/board-monitoring.jpg" alt="Connected pump-monitoring module" loading="lazy" width="1400" height="788"><figcaption><span class="e">Connected pump-monitoring module</span><span class="z">聯網水泵監測模組</span></figcaption></figure>
+        <figure><img src="assets/board-enclosed.jpg" alt="Enclosed pump-controller module" loading="lazy" width="1400" height="788"><figcaption><span class="e">Enclosed pump-controller module</span><span class="z">整機水泵控制模組</span></figcaption></figure>
+      </div>
+    </div>
+
+    <div class="pc-block">
+      <h3><span class="e">Inside the production line</span><span class="z">生產線</span></h3>
+      <div class="pc-duo">
+        <figure><img src="assets/pcba-smt-line.jpg" alt="SMT production line" loading="lazy" width="1400" height="788"><figcaption><span class="e">SMT production line</span><span class="z">SMT生產線</span></figcaption></figure>
+        <figure><img src="assets/hk-logistics.jpg" alt="Hong Kong regional logistics" loading="lazy" width="1400" height="788"><figcaption><span class="e">Hong Kong regional logistics link</span><span class="z">香港區域物流樞紐</span></figcaption></figure>
+      </div>
+      <ol class="pc-steps">
+        <li><img src="assets/pcba-trays.jpg" alt="" loading="lazy"><small>01</small><b><span class="e">Receive</span><span class="z">來料檢驗</span></b><span><span class="e">Incoming PCB and component inspection</span><span class="z">PCB及元件來料檢驗</span></span></li>
+        <li><img src="assets/pcba-stencil.jpg" alt="" loading="lazy"><small>02</small><b><span class="e">Print paste</span><span class="z">錫膏印刷</span></b><span><span class="e">Stencil printing, checked by SPI</span><span class="z">鋼網印刷，SPI檢測</span></span></li>
+        <li><img src="assets/pcba-placement.jpg" alt="" loading="lazy"><small>03</small><b><span class="e">Place</span><span class="z">自動貼片</span></b><span><span class="e">Automated pick-and-place of SMT parts</span><span class="z">SMT元件自動貼裝</span></span></li>
+        <li><img src="assets/pcba-reflow.jpg" alt="" loading="lazy"><small>04</small><b><span class="e">Reflow</span><span class="z">回流焊接</span></b><span><span class="e">Controlled oven profile forms joints</span><span class="z">受控溫度曲線焊接</span></span></li>
+        <li><img src="assets/pcba-aoi.jpg" alt="" loading="lazy"><small>05</small><b><span class="e">Inspect</span><span class="z">光學檢測</span></b><span><span class="e">AOI, plus X-ray where required</span><span class="z">AOI檢測，需要時X光檢測</span></span></li>
+        <li><div class="pc-ph">THT</div><small>06</small><b><span class="e">Through-hole</span><span class="z">插件焊接</span></b><span><span class="e">Connectors added when the design requires</span><span class="z">按設計需要加裝插件</span></span></li>
+        <li><img src="assets/pcba-test.jpg" alt="" loading="lazy"><small>07</small><b><span class="e">Test &amp; ship</span><span class="z">測試出貨</span></b><span><span class="e">ICT / functional test, traceable release</span><span class="z">ICT/功能測試，可追溯出貨</span></span></li>
+      </ol>
+      <img class="pc-diagram" src="assets/pcba-process-diagram.jpg" alt="SMT process route" loading="lazy" width="1400" height="560">
+    </div>
+
+    <div class="pc-two">
+      <div>
+        <h3><span class="e">Production equipment</span><span class="z">生產設備</span></h3>
+        <ul class="pc-list">
+          <li><b><span class="e">Stencil printing</span><span class="z">鋼網印刷機</span></b><span><span class="e">Deposits solder paste on board pads</span><span class="z">於焊盤印刷錫膏</span></span></li>
+          <li><b><span class="e">Solder-paste inspection (SPI)</span><span class="z">錫膏檢測 (SPI)</span></b><span><span class="e">Checks paste before placement</span><span class="z">貼片前檢查錫膏</span></span></li>
+          <li><b><span class="e">Pick-and-place machines</span><span class="z">自動貼片機</span></b><span><span class="e">Automated SMT component placement</span><span class="z">SMT元件自動貼裝</span></span></li>
+          <li><b><span class="e">Reflow ovens</span><span class="z">回流焊爐</span></b><span><span class="e">Controlled thermal soldering</span><span class="z">受控溫度焊接</span></span></li>
+          <li><b><span class="e">Automated optical inspection (AOI)</span><span class="z">自動光學檢測 (AOI)</span></b><span><span class="e">Placement and solder-joint checks</span><span class="z">貼裝及焊點檢查</span></span></li>
+          <li><b><span class="e">ICT / functional testing</span><span class="z">ICT / 功能測試</span></b><span><span class="e">Board-specific electrical tests</span><span class="z">針對產品的電性測試</span></span></li>
+          <li><b><span class="e">ESD-controlled handling</span><span class="z">防靜電物料處理</span></b><span><span class="e">Protects boards from static damage</span><span class="z">防止靜電損壞</span></span></li>
+        </ul>
+      </div>
+      <div>
+        <h3><span class="e">Plant layout</span><span class="z">廠房佈局</span></h3>
+        <ul class="pc-list">
+          <li><b><span class="e">Component storage</span><span class="z">元件倉儲</span></b><span><span class="e">Receive PCBs and parts, control stock</span><span class="z">收料及庫存管理</span></span></li>
+          <li><b><span class="e">SMT production</span><span class="z">SMT生產</span></b><span><span class="e">Print, place and reflow</span><span class="z">印刷、貼裝及回流</span></span></li>
+          <li><b><span class="e">Inspection &amp; rework</span><span class="z">檢測及返修</span></b><span><span class="e">Review SPI/AOI results, approved repairs</span><span class="z">覆核檢測結果及核准返修</span></span></li>
+          <li><b><span class="e">Electrical test</span><span class="z">電性測試</span></b><span><span class="e">ICT / FCT and final assembly</span><span class="z">ICT/FCT及最終組裝</span></span></li>
+          <li><b><span class="e">Finished-goods dispatch</span><span class="z">成品出貨</span></b><span><span class="e">Pack with labels and traceability</span><span class="z">標籤包裝及追溯紀錄</span></span></li>
+          <li><b><span class="e">Engineering support</span><span class="z">工程支援</span></b><span><span class="e">Programs, line changes, maintenance</span><span class="z">程式、換線及維護</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pc-cap">
+      <div>
+        <h3><span class="e">Capacity planning model</span><span class="z">產能規劃模型</span></h3>
+        <div class="pc-tablewrap"><table class="pc-table">
+          <tr><td><span class="e">SMT production lines</span><span class="z">SMT生產線</span></td><td>1</td></tr>
+          <tr><td><span class="e">Shifts</span><span class="z">班次</span></td><td>2 × 8 h = 16 h/day</td></tr>
+          <tr><td><span class="e">Production days</span><span class="z">生產日</span></td><td>22 / month</td></tr>
+          <tr><td><span class="e">Effective equipment utilisation</span><span class="z">設備有效使用率</span></td><td>65%</td></tr>
+          <tr><td><span class="e">First-pass yield</span><span class="z">直通率</span></td><td>98%</td></tr>
+          <tr><td><span class="e">Placement rate (assumed)</span><span class="z">貼裝速度（假設）</span></td><td>6,000 / h</td></tr>
+          <tr><td><span class="e">Components per board (assumed)</span><span class="z">每板元件（假設）</span></td><td>60</td></tr>
+        </table></div>
+      </div>
+      <div class="pc-est">
+        <small><span class="e">Planning estimate</span><span class="z">規劃估算</span></small>
+        <strong>≈ 22,400</strong>
+        <p><span class="e">good boards per month on one line. Placement rate and component count are assumptions, not verified supplier specifications, so this is a planning figure rather than confirmed capacity.</span><span class="z">單線每月合格板約22,400片。貼裝速度及元件數量為假設值，此為規劃數字，並非確認產能。</span></p>
+      </div>
+    </div>
+
+    <div class="pc-block">
+      <h3><span class="e">Quality built into every stage</span><span class="z">全流程品質控制</span></h3>
+      <ol class="pc-q">
+        <li><b><span class="e">Incoming</span><span class="z">來料</span></b><span><span class="e">Verify PCB revision, part numbers, lots and quantities</span><span class="z">核對PCB版本、料號、批次及數量</span></span></li><li><b><span class="e">Solder paste</span><span class="z">錫膏</span></b><span><span class="e">Check alignment and deposits before placement</span><span class="z">貼片前檢查印刷對位及錫膏量</span></span></li><li><b><span class="e">After reflow</span><span class="z">回流後</span></b><span><span class="e">Presence, orientation and solder quality</span><span class="z">檢查元件存在、方向及焊接品質</span></span></li><li><b><span class="e">Electrical test</span><span class="z">電性測試</span></b><span><span class="e">Board-specific fixture and approved limits</span><span class="z">專用治具及核准標準</span></span></li><li><b><span class="e">Final release</span><span class="z">出貨放行</span></b><span><span class="e">Lot and serial traceability; failed boards held</span><span class="z">批次及序號追溯，不良品隔離</span></span></li>
+      </ol>
+    </div>
+
+    <div class="pc-why">
+      <div><b><span class="e">Greater Bay Area base</span><span class="z">大灣區製造基地</span></b><p><span class="e">An existing plant in a key manufacturing and supply-chain hub, close to Hong Kong.</span><span class="z">位於製造及供應鏈重鎮的現有工廠，毗鄰香港。</span></p></div>
+      <div><b><span class="e">An operating plant</span><span class="z">營運中的工廠</span></b><p><span class="e">A working PCBA production plant, not only a financial stake.</span><span class="z">營運中的PCBA生產工廠，而非單純財務投資。</span></p></div>
+      <div><b><span class="e">Room to grow</span><span class="z">發展空間</span></b><p><span class="e">More customers, higher utilisation, new product families, plus procurement, testing and box-build, subject to demand.</span><span class="z">視乎需求，擴大客戶群、提升使用率、增加產品系列及延伸採購、測試與整機組裝服務。</span></p></div>
+    </div>
+    <blockquote class="pc-thesis"><span class="e">The Shenzhen PCBA plant marks Smart Village’s move from traditional industrial investment toward operating manufacturing assets, with a base to expand across industrial-control boards and PCB assembly.</span><span class="z">深圳PCBA工廠標誌著智慧村由傳統產業投資邁向營運製造資產，為工業控制板及電路板組裝業務的拓展奠定基礎。</span></blockquote>
   </div>
 </section>
 
@@ -714,6 +929,7 @@ footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12p
       <nav aria-label="Footer">
         <a href="#about"><span class="e">About</span><span class="z">關於我們</span></a>
         <a href="#business"><span class="e">Business</span><span class="z">業務範疇</span></a>
+        <a href="#pcba"><span class="e">PCBA Plant</span><span class="z">PCBA工廠</span></a>
         <a href="#focus"><span class="e">Focus Areas</span><span class="z">重點領域</span></a>
         <a href="#portfolio"><span class="e">Portfolio</span><span class="z">項目案例</span></a>
       <a href="#approach"><span class="e">Approach</span><span class="z">投資方法</span></a>
